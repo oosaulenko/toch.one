@@ -1,0 +1,11 @@
+<section
+        class="section section-{{ block_name }}{{ (attributes.className is defined) ? ' section-' ~ attributes.className }}"
+        data-align="{{ (attributes.align is defined) ? attributes.align : 'none' }}"
+>
+    <div class="container{{ (attributes.data.settings.container is defined
+    and attributes.data.settings.container == 1) ? ' container-full' }}">
+        <div class="section__inner">
+            {% block body_block %}{% endblock %}
+        </div>
+    </div>
+</section>

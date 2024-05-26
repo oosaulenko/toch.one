@@ -1,0 +1,24 @@
+header.header {
+    background-color: #fff;
+    color: #333;
+    padding: 12px 0;
+
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__logo {
+
+    }
+
+    .header__menu {
+        .menu {
+            list-style: none;
+
+            display: flex;
+            gap: 20px;
+        }
+    }
+}

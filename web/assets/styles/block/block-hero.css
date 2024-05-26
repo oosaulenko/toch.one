@@ -1,0 +1,26 @@
+.section.section-hero {
+    padding: 80px 0;
+
+    .section__inner {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .section__image {
+
+        img {
+            max-width: 500px;
+            max-height: 400px;
+            object-fit: contain;
+        }
+    }
+
+    .section__title {
+        margin-bottom: 20px;
+    }
+
+    .section__content {
+        line-height: 1.5;
+    }
+}

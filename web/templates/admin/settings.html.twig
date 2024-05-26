@@ -1,0 +1,29 @@
+{% extends '@EasyAdmin/layout.html.twig' %}
+
+{% block page_title %}Settings{% endblock %}
+
+{% block main %}
+    {{ form_start(form, { 'attr' : { 'class': 'ea-edit-form' } }) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}
+
+{% block page_actions %}
+    <button class="actionSaveSettings btn btn-primary">Save Settings</button>
+{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body_class %}{{- parent() -}} ea-content-width-full easy-media-admin{% endblock %}
+
+{# styles #}
+{% block head_stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{# scripts #}
+{% block body_javascript %}
+    {{ parent() }}
+{% endblock %}

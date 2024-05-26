@@ -1,0 +1,25 @@
+admin:
+    resource:
+        path: ../src/Controller/Admin/
+        namespace: App\Controller\Admin
+#        requirements:
+#            _locale: '%app.supported_locales%'
+    type: attribute
+
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+        requirements:
+            _locale: '%app.supported_locales%'
+    type: attribute
+    prefix:
+        en: ''
+        uk: '/uk'
+        fr: '/fr'
+        de: '/de'
+        es: '/es'
+        it: '/it'
+        pl: '/pl'
+        ru: '/ru'
+        tr: '/tr'

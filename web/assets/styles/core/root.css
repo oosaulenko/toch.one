@@ -1,0 +1,60 @@
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-success: #28a745;
+    --color-info: #17a2b8;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+    --color-white: #fff;
+    --color-black: #000;
+
+    /* Typography */
+    --font-sans: "Roboto", sans-serif;
+
+    /* Font size */
+    --fs-xs: 12px;
+    --fs-s: 14px;
+    --fs-m: 16px;
+    --fs-l: 18px;
+    --fs-xl: 20px;
+
+    /* Layout */
+    --container: 1176px;
+    --wrapper: 744px;
+    --wrapper-lg: 792px;
+    --gap: 24px;
+    --sp: 16px;
+
+    /* Spaces */
+    --sp03: 4px;
+    --sp02: 8px;
+    --sp01: 12px;
+    --sp0: 16px;
+    --sp1: 24px;
+    --sp2: 32px;
+    --sp3: 48px;
+    --sp4: 64px;
+    --sp5: 80px;
+    --sp6: 96px;
+
+    --sp-section: 56px;
+
+    /* Gaps */
+    --gap-sm: 12px;
+    --gap-md: 24px;
+    --gap-lg: 40px;
+
+    /* Radius */
+    --br-sm: 2px;
+    --br-md: 4px;
+    --br-lg: 8px;
+    --br-xl: 16px;
+
+    /* Shadow */
+    --shadow-sm: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+
+    /* Default transition */
+    --transition: all 250ms ease 0s;
+}

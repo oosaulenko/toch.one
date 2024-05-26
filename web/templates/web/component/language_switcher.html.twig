@@ -1,0 +1,11 @@
+<form method="post" action="{{ path('language_switcher') }}">
+    <input type="hidden" name="relative" value="{{ relativeLocales }}" />
+    <input type="hidden" name="entity_name" value="{{ entity_name }}">
+    <select name="language" onchange="this.form.submit()">
+        {% for code, lang in langs %}
+            <option value="{{ code }}" {{ app.request.locale == code ? 'selected' : '' }}>
+                {{ lang }}
+            </option>
+        {% endfor %}
+    </select>
+</form>

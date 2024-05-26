@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="page__title">{{ page.title }}</h1>
+        <div class="page__description">{{ page.description }}</div>
+
+        <div class="page__content">
+            <div class="page__list archive_posts">
+                {% for post in posts %}
+                    <div class="archive_post">
+                        <a href="{{ path('app_post_single', {'slug': post.slug}) }}" class="archive_post__link">
+                            {% if post.featureImage %}
+                                <div class="post__image">
+                                    {{ looly_media(post.featureImage) }}
+                                </div>
+                            {% endif %}
+                            <h3 class="post__title">{{ post.title }}</h3>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

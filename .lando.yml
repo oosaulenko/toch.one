@@ -1,0 +1,17 @@
+name: skeleton-symfony
+recipe: symfony
+config:
+  webroot: web/public
+  php: '8.2'
+  via: nginx
+  database: mysql:5.7
+  xdebug: true
+services:
+  database:
+    portforward: 63004
+  appserver:
+    overrides:
+      environment:
+        # Support debugging CLI with XDEBUG.
+        PHP_IDE_CONFIG: "serverName=appserver"
+        XDEBUG_SESSION_START: lando

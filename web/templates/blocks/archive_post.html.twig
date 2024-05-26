@@ -1,0 +1,14 @@
+{% extends 'blocks/base.html.twig' %}
+
+{% block body_block %}
+    <h2 class="section__title">{{ attributes.data.title }}</h2>
+    <div class="section__content">{{ attributes.data.text }}</div>
+
+    {% if attributes.data.posts.data is defined %}
+        <ul>
+            {% for post in attributes.data.posts.data %}
+                <li>{{ post.title }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}

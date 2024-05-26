@@ -1,0 +1,23 @@
+.field-siteLangs {
+
+    & > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        border: var(--bs-border-width) solid var(--bs-border-color);
+        padding: 12px;
+        border-radius: var(--bs-border-radius);
+
+        input {
+            width: 14px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            width: calc(100% - 24px);
+            padding-bottom: 0;
+        }
+    }
+}

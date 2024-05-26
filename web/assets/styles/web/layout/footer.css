@@ -1,0 +1,23 @@
+footer.footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 12px 0;
+
+    .footer__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__menu {
+        .menu {
+            list-style: none;
+
+            display: flex;
+            gap: 20px;
+
+            a {
+                color: var(--color-white);
+            }
+        }
+    }
+}

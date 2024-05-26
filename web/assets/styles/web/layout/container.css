@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    padding-right: var(--gap-md);
+    padding-left: var(--gap-md);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--container);
+    height: 100%;
+
+    @media (max-width: 992px) {
+        padding-right: var(--sp1);
+        padding-left: var(--sp1);
+    }
+
+    @media (max-width: 576px) {
+        padding-right: var(--sp0);
+        padding-left: var(--sp0);
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &.container-full {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,8 @@
+{# templates/admin/my-custom-page.html.twig #}
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{#{% block content_title %}Dashboard{% endblock %}#}
+
+{% block main %}
+    <p class="text">Hello <strong>{{ ea.user is null ? 'user.anonymous'|trans(domain = 'EasyAdminBundle') : ea.userMenu.name }}</strong></p>
+{% endblock %}
