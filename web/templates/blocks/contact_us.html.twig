@@ -1,0 +1,35 @@
+{% extends 'blocks/base.html.twig' %}
+
+{% block body_block %}
+    <div class="section__frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d710.4124043749365!2d35.17429351024577!3d47.818991896760146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5e091dc8b8df%3A0x654eab2fa4f0b157!2z0LLRg9C70LjRhtGPINCf0LXRgNGI0LAg0LvQuNCy0LDRgNC90LAsIDI5LCDQl9Cw0L_QvtGA0ZbQttC20Y8sINCX0LDQv9C-0YDRltC30YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2OTAwMA!5e0!3m2!1suk!2sua!4v1717351389085!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="section__content">
+        <div class="item">
+            <h4 class="item__title">Телефони</h4>
+            <div class="item__list">
+                <p><a href="tel:+380681682828">+380 (68) 168 28 28</a></p>
+                <p><a href="tel:+380951682828">+380 (95) 168 28 28</a></p>
+            </div>
+        </div>
+        <div class="item">
+            <h4 class="item__title">Години роботи</h4>
+            <div class="item__list">
+                <p>Пн-Пт: 9:00 - 18:00</p>
+                <p>Сб: 10:00 - 17:00</p>
+                <p>Нд: вихідний</p>
+            </div>
+        </div>
+        <div class="item">
+            <h4 class="item__title">Адреса</h4>
+            <div class="item__list">
+                <p>вул. Перша ливарна, 29</p>
+            </div>
+        </div>
+
+        <div class="section__actions">
+            <button class="button button-primary actionShowModal">Передзвоніть мені</button>
+        </div>
+    </div>
+{% endblock %}

@@ -1,13 +1,12 @@
 {% extends 'blocks/base.html.twig' %}
 
 {% block body_block %}
-    {% if attributes.data.image is defined %}
-        <div class="section__image">
-            {{ looly_media(attributes.data.image) }}
-        </div>
-    {% endif %}
     <div class="section__content">
-        <h2 class="section__title">{{ attributes.data.title }}</h2>
+        <h1 class="section__title">{{ attributes.data.title }}</h1>
         <div class="section__content">{{ attributes.data.text }}</div>
+        <div class="section__actions">
+            <button class="button button-primary actionShowModal">Передзвоніть мені</button>
+        </div>
     </div>
+    <div class="rotate"></div>
 {% endblock %}

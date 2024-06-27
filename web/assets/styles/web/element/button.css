@@ -1,0 +1,26 @@
+.button {
+    border: 2px solid transparent;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    font-size: var(--fs-m);
+    line-height: 24px;
+    /*color: var(--c-white);*/
+    border-radius: var(--br-lg);
+    padding: 10px 24px;
+    max-width: fit-content;
+    min-width: min-content;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.button-primary {
+    background-color: var(--color-5);
+    color: var(--color-text);
+
+    &:hover {
+        background-color: var(--color-4);
+    }
+}
