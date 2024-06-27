@@ -33,7 +33,8 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle($this->optionService->getSetting('siteName')->getValue() ?? 'Skeleton Panel')
+            ->setTitle($this->optionService->getSetting('siteName') ?
+                $this->optionService->getSetting('siteName')->getValue() : 'Skeleton Panel')
             ->setLocales($this->languages->getSupportLangs())
             ;
     }

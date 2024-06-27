@@ -10,8 +10,17 @@
     --color-white: #fff;
     --color-black: #000;
 
+    /* Colors */
+    --color-1: #E4E6D9;
+    --color-2: #C0CFB2;
+    --color-3: #6D8777;
+    --color-4: #45624E;
+    --color-5: #273526;
+
+    --color-text: var(--color-1);
+
     /* Typography */
-    --font-sans: "Roboto", sans-serif;
+    --font-sans: "Montserrat", sans-serif;
 
     /* Font size */
     --fs-xs: 12px;

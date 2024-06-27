@@ -10,7 +10,7 @@
     background: rgba(0, 0, 0, .8);
     opacity: .01;
     transition: opacity .4s ease;
-    z-index: 1000;
+    z-index: 7000;
     will-change: opacity
 }
 

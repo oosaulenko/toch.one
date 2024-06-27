@@ -1,5 +1,6 @@
 /* Core */
 @import url('core/root.css');
+@import url('core/module/basiclightbox.css');
 
 /* Base */
 @import url('web/base/fonts.css');
@@ -8,6 +9,10 @@
 
 /* Elements */
 @import url('web/element/logo.css');
+@import url('web/element/button.css');
+@import url('web/element/social_media.css');
+@import url('web/element/modal.css');
+@import url('web/element/form.css');
 
 /* Layout */
 @import url('web/layout/container.css');

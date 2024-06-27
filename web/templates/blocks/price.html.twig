@@ -1,0 +1,77 @@
+{% extends 'blocks/base.html.twig' %}
+
+{% set list = {
+    "categories": [
+        {
+            "name": "Манікюрні інструменти",
+            "items": [
+            {"name": "Накожниці", "price": 150},
+            {"name": "Кусачки", "price": 150},
+            {"name": "Ножиці кутикульні", "price": 150},
+            {"name": "Ножиці нігтьові", "price": 130},
+            {"name": "Пушер/шабер", "price": 100},
+            {"name": "Пінцет", "price": 90},
+            {"name": "Чищення інструменту", "price": 60}
+        ]
+        },
+        {
+            "name": "Перукарські інструменти",
+            "items": [
+            {"name": "Філіровочні ножиці", "price": 230},
+            {"name": "Прямий зріз", "price": 200},
+            {"name": "Ковзний зріз (слайсинг)", "price": 250},
+            {"name": "Ножовий блок від машинки для стрижки", "price": 250},
+            {"name": "Заміна деталей на ножицях", "price": 60},
+            {"name": "Кравецькі, концелярські ножиці", "price": 120}
+        ]
+        },
+        {
+            "name": "Побутовий інструмент",
+            "items": [
+            {"name": "Ніж до 10 см", "price": 140},
+            {"name": "Ніж 10-15см", "price": 160},
+            {"name": "Ніж 15-20 см", "price": 200},
+            {"name": "Ніж 20-30 см", "price": 240},
+            {"name": "Ножиці побутові", "price": 100},
+            {"name": "М'ясорубка (ніж/решітка)", "price": 150},
+            {"name": "Слайсер", "price": 300},
+            {"name": "Ніж блендера", "price": 300},
+            {"name": "Сокира", "price": 150},
+            {"name": "Мотика, сапка, сапка", "price": 150},
+            {"name": "Лопата, коса", "price": 150}
+        ]
+        },
+        {
+            "name": "Додаткові послуги",
+            "items": [
+            {"name": "Кур'єрська послуга в одну сторону", "price": 100},
+            {"name": "У дві сторони", "price": 180},
+        ]
+        }
+    ]
+} %}
+
+{% block body_block %}
+    <h2 class="section__title">{{ attributes.data.title }}</h2>
+
+    <div class="section__list">
+        {% for category in list.categories %}
+            <div class="item">
+                <h3 class="item__title">{{ category.name }}</h3>
+                <div class="item__sublist">
+                    {% for item in category.items %}
+                        <div class="subitem">
+                            <div class="subitem__title">{{ item.name }}</div>
+                            <div class="subitem__price">{{ item.price }} грн</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="section__actions">
+        <button class="button button-primary actionShowModal">Передзвоніть мені</button>
+    </div>
+
+{% endblock %}

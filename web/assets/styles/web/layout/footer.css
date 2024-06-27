@@ -1,23 +1,16 @@
 footer.footer {
-    background-color: var(--color-dark);
-    color: var(--color-white);
-    padding: 12px 0;
+    background-color: var(--color-5);
+    color: var(--color-text);
+    padding: var(--sp1) 0;
+
+    @media (max-width: 576px) {
+        margin-bottom: 42px;
+    }
 
     .footer__wrapper {
         display: flex;
         align-items: center;
-    }
-
-    .footer__menu {
-        .menu {
-            list-style: none;
-
-            display: flex;
-            gap: 20px;
-
-            a {
-                color: var(--color-white);
-            }
-        }
+        justify-content: center;
+        text-align: center;
     }
 }
